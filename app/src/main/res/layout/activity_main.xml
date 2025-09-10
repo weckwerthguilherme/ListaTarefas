@@ -11,7 +11,7 @@
         android:id="@+id/txv_nome_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lista de atividades!"
+        android:text="Lista de filmes!"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Descrição"
+        android:hint="Diretor"
         android:inputType="text"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:ems="10"
-        android:hint="Nome da atividade"
+        android:hint="Nome do filme"
         android:inputType="text"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,8 +51,8 @@
         android:id="@+id/btn_cadastrar_filme"
         android:layout_width="153dp"
         android:layout_height="69dp"
-        android:layout_marginTop="20dp"
-        android:text="Cadastrar atividade"
+        android:layout_marginTop="312dp"
+        android:text="Cadastrar filme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_nome_diretor" />
@@ -69,5 +69,72 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_input_get" />
+
+    <SeekBar
+        android:id="@+id/sb_avaliacao"
+        android:layout_width="177dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="200dp"
+        android:max="5"
+        android:thumb="@android:drawable/btn_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nome_diretor" />
+
+    <CheckBox
+        android:id="@+id/cb_terror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Terror"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_acao" />
+
+    <CheckBox
+        android:id="@+id/cb_acao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Ação"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nome_diretor" />
+
+    <CheckBox
+        android:id="@+id/cb_drama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Drama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nome_diretor" />
+
+    <CheckBox
+        android:id="@+id/cb_romance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Romance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_drama" />
+
+    <TextView
+        android:id="@+id/txv_estrelas"
+        android:layout_width="71dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="200dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/sb_avaliacao"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nome_diretor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,8 @@ class FilmeAdapter(private val filmes: List<Filme>) :
         val txvNomeF: TextView = itemView.findViewById(R.id.txv_nome_filme)
         val txvNomeD: TextView = itemView.findViewById(R.id.txv_nome_diretor)
         val cbConcluida: CheckBox = itemView.findViewById<CheckBox>(R.id.cb_concluida) //Importei o checkbox
+        val txvGeneros: TextView = itemView.findViewById<TextView>(R.id.txv_generos)
+        val txvAvaliacao: TextView = itemView.findViewById<TextView>(R.id.txv_avaliacao)
     }
 
     override fun onCreateViewHolder(
@@ -31,8 +33,12 @@ class FilmeAdapter(private val filmes: List<Filme>) :
         position: Int
     ) {
         val filme = filmes[position]
-        holder.txvNomeF.text = filme.nomeFilme
-        holder.txvNomeD.text = filme.diretorFilme
+        holder.txvNomeF.text = "Titulo: " + filme.nomeFilme
+        holder.txvNomeD.text = "Diretor: " + filme.diretorFilme
+
+        holder.txvGeneros.text = "Generos: " + filme.generos.toString()
+        holder.txvAvaliacao.text = filme.avaliacao.toString() + " Estrelas"
+
         holder.cbConcluida.isChecked = filme.concluida //defini o estado inicial do checkbox
         holder.cbConcluida.setOnCheckedChangeListener { _, isChecked -> //precisa disso aqui pra fazer o listener de mudança do cb funcionar
             filme.concluida = isChecked //Atualiza a propriedade 'concluida' do objeto Filme na lista
