@@ -1,4 +1,4 @@
-package br.guilherme.listatarefas.adapter
+package br.guilherme.listafilmesavancada.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import br.guilherme.listatarefas.R
-import br.guilherme.listatarefas.model.Filme
+import br.guilherme.listafilmesavancada.R
+import br.guilherme.listafilmesavancada.model.Filme
 
 class FilmeAdapter(private val filmes: List<Filme>) :
     RecyclerView.Adapter<FilmeAdapter.ViewHolder>() {

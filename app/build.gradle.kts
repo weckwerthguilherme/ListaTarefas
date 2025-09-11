@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "br.guilherme.listatarefas"
+    namespace = "br.guilherme.listafilmesavancada"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "br.guilherme.listatarefas"
+        applicationId = "br.guilherme.listafilmesavancada"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

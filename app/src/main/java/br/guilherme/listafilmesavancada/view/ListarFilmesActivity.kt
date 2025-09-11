@@ -1,4 +1,4 @@
-package br.guilherme.listatarefas.view
+package br.guilherme.listafilmesavancada.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,9 +7,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import br.guilherme.listatarefas.R
-import br.guilherme.listatarefas.adapter.FilmeAdapter
-import br.guilherme.listatarefas.model.FilmeDaoImpl
+import br.guilherme.listafilmesavancada.R
+import br.guilherme.listafilmesavancada.adapter.FilmeAdapter
+import br.guilherme.listafilmesavancada.model.FilmeDaoImpl
 
 class ListarFilmesActivity : AppCompatActivity(R.layout.activity_listar_filmes) {
 

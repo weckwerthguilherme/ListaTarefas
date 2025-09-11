@@ -1,4 +1,4 @@
-package br.guilherme.listatarefas.model
+package br.guilherme.listafilmesavancada.model
 
 data class Filme(
     val nomeFilme: String,

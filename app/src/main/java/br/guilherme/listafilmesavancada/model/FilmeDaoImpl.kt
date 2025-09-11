@@ -1,4 +1,4 @@
-package br.guilherme.listatarefas.model
+package br.guilherme.listafilmesavancada.model
 
 class FilmeDaoImpl: FilmeDao {
     companion object {

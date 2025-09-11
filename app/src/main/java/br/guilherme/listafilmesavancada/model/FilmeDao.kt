@@ -1,4 +1,4 @@
-package br.guilherme.listatarefas.model
+package br.guilherme.listafilmesavancada.model
 
 interface FilmeDao {
     fun adicionarFilme(filme: Filme)
